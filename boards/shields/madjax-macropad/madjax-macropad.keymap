@@ -16,4 +16,21 @@
         };
     };
  };
- 
+
+/ {
+    behaviors {
+        rot_kp: encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        base {
+            ...
+            sensor-bindings = <&rot_kp PG_UP PG_DN>;
+        }
+    }
+};
