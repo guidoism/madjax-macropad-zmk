@@ -1,0 +1,10 @@
+file_format: "1"
+id: madjax-macropad
+name: MadJax Macropad
+type: shield
+url: https://github.com/guidoism/madjax-macropad-zmk
+requires: []
+exposes: []
+features:
+  - keys
+  - encoder
