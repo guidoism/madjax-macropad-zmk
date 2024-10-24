@@ -29,7 +29,6 @@
     keymap {
         compatible = "zmk,keymap";
         base {
-            ...
             sensor-bindings = <&rot_kp PG_UP PG_DN>;
         }
     }
